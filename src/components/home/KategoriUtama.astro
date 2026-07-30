@@ -27,9 +27,15 @@ const categories = [
 
 <section class="mx-auto max-w-6xl px-4 py-16">
   <h2 class="mb-6 font-display text-2xl font-semibold text-ink md:text-3xl">Kategori Utama</h2>
-  <div class="grid gap-4 md:grid-cols-3">
-    {categories.map((cat) => (
-      <a href={cat.href} class="group relative block h-80 overflow-hidden rounded-lg">
+  <div class="grid gap-4 md:grid-cols-2 md:grid-rows-2">
+    {categories.map((cat, i) => (
+      <a
+        href={cat.href}
+        class:list={[
+          "group relative block overflow-hidden rounded-lg",
+          i === 0 ? "h-96 md:row-span-2 md:h-full" : "h-64 md:h-full",
+        ]}
+      >
         <img
           src={cat.image}
           alt={cat.name}
