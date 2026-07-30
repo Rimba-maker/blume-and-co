@@ -26,3 +26,9 @@ pnpm-debug.log*
 # internal planning docs (business strategy, not for public repo)
 blume-and-co-PRD.md
 *PRD*.md
+
+# internal build/design process docs (reveal prototype strategy, design
+# rationale, and self-critique notes - not for a public repo a client could browse)
+PRODUCT.md
+DESIGN.md
+.impeccable/
