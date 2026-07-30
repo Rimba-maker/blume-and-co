@@ -31,7 +31,7 @@ export default function MegaMenu({ items }: Props) {
   };
   const closeSoon = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
-    closeTimer.current = setTimeout(() => setOpenDesktop(null), 350);
+    closeTimer.current = setTimeout(() => setOpenDesktop(null), 100);
   };
 
   const panelTransition = reduceMotion
