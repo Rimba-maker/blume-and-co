@@ -16,11 +16,9 @@ export type NavItem = {
 
 interface Props {
   items: NavItem[];
-  waHref: string;
-  catalogHref: string;
 }
 
-export default function MegaMenu({ items, waHref, catalogHref }: Props) {
+export default function MegaMenu({ items }: Props) {
   const [openDesktop, setOpenDesktop] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
@@ -106,23 +104,6 @@ export default function MegaMenu({ items, waHref, catalogHref }: Props) {
             </li>
           ))}
         </ul>
-
-        <div className="flex items-center gap-2">
-          <a
-            href={catalogHref}
-            className="rounded-full border border-hairline px-4 py-2 text-sm font-medium text-ink hover:bg-surface-card"
-          >
-            Download Katalog
-          </a>
-          <a
-            href={waHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-cta px-4 py-2 text-sm font-medium text-ink hover:bg-cta-active"
-          >
-            Order via WhatsApp
-          </a>
-        </div>
       </nav>
 
       {/* Mobile bar */}
@@ -215,22 +196,6 @@ export default function MegaMenu({ items, waHref, catalogHref }: Props) {
                 </li>
               ))}
             </ul>
-            <div className="mt-3 flex flex-col gap-2">
-              <a
-                href={catalogHref}
-                className="rounded-full border border-hairline px-4 py-2 text-center text-sm font-medium text-ink"
-              >
-                Download Katalog
-              </a>
-              <a
-                href={waHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full bg-cta px-4 py-2 text-center text-sm font-medium text-ink"
-              >
-                Order via WhatsApp
-              </a>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>
