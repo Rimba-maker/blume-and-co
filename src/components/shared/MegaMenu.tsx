@@ -31,12 +31,12 @@ export default function MegaMenu({ items }: Props) {
   return (
     <>
       {/* Desktop capsule nav */}
-      <nav className="mx-auto hidden max-w-6xl items-center justify-between gap-4 rounded-full border border-hairline bg-bg/90 px-6 py-3 shadow-sm backdrop-blur lg:flex">
-        <a href="/" className="font-display text-lg font-semibold text-ink">
+      <nav className="mx-auto hidden max-w-6xl grid-cols-[1fr_auto_1fr] items-center gap-4 rounded-full border border-hairline bg-bg/90 px-6 py-3 shadow-sm backdrop-blur lg:grid">
+        <a href="/" className="font-display text-lg font-semibold tracking-tight text-ink">
           Blume &amp; Co.
         </a>
 
-        <ul className="flex items-center gap-1">
+        <ul className="flex items-center gap-1 justify-self-center">
           {items.map((item) => (
             <li
               key={item.label}
@@ -104,11 +104,13 @@ export default function MegaMenu({ items }: Props) {
             </li>
           ))}
         </ul>
+
+        <div aria-hidden="true" />
       </nav>
 
       {/* Mobile bar */}
       <div className="flex items-center justify-between rounded-full border border-hairline bg-bg/90 px-4 py-3 shadow-sm backdrop-blur lg:hidden">
-        <a href="/" className="font-display text-base font-semibold text-ink">
+        <a href="/" className="font-display text-base font-semibold tracking-tight text-ink">
           Blume &amp; Co.
         </a>
         <button
