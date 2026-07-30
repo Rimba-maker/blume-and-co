@@ -922,5 +922,140 @@
     "priceIDR": 150000,
     "image": "https://images.pexels.com/photos/1551350/pexels-photo-1551350.jpeg?auto=compress&cs=tinysrgb&w=800",
     "badge": "none"
+  },
+  {
+    "id": "buket-bunga-korean-style",
+    "name": "Buket Bunga Korean Style",
+    "slug": "buket-bunga-korean-style",
+    "category": "flower",
+    "subcategory": "buket-bunga",
+    "subcategoryLabel": "Buket Bunga",
+    "occasions": [
+      "birthday",
+      "congratulations",
+      "girlfriend-day"
+    ],
+    "priceIDR": 195000,
+    "image": "https://images.pexels.com/photos/26262705/pexels-photo-26262705.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "badge": "baru"
+  },
+  {
+    "id": "buket-wisuda-aesthetic",
+    "name": "Buket Wisuda Aesthetic",
+    "slug": "buket-wisuda-aesthetic",
+    "category": "flower",
+    "subcategory": "buket-bunga",
+    "subcategoryLabel": "Buket Bunga",
+    "occasions": [
+      "graduation"
+    ],
+    "priceIDR": 210000,
+    "image": "https://images.pexels.com/photos/38535529/pexels-photo-38535529.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "badge": "baru"
+  },
+  {
+    "id": "buket-uang-lotus",
+    "name": "Buket Uang Bentuk Lotus",
+    "slug": "buket-uang-lotus",
+    "category": "flower",
+    "subcategory": "buket-uang",
+    "subcategoryLabel": "Buket Uang",
+    "occasions": [
+      "graduation",
+      "wedding"
+    ],
+    "priceIDR": 175000,
+    "priceNote": "Belum termasuk isi uang",
+    "image": "https://images.pexels.com/photos/32793763/pexels-photo-32793763.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "badge": "baru"
+  },
+  {
+    "id": "hampers-kurma-premium",
+    "name": "Hampers Kurma Premium",
+    "slug": "hampers-kurma-premium",
+    "category": "cake-gift",
+    "subcategory": "food-hampers",
+    "subcategoryLabel": "Food Hampers",
+    "occasions": [
+      "corporate"
+    ],
+    "priceIDR": 285000,
+    "image": "https://images.pexels.com/photos/32692731/pexels-photo-32692731.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "badge": "baru"
+  },
+  {
+    "id": "red-velvet-cookies-cream-cheese",
+    "name": "Red Velvet Cookies Cream Cheese",
+    "slug": "red-velvet-cookies-cream-cheese",
+    "category": "cake-gift",
+    "subcategory": "cookies",
+    "subcategoryLabel": "Cookies",
+    "occasions": [
+      "birthday",
+      "congratulations"
+    ],
+    "priceIDR": 95000,
+    "image": "https://images.pexels.com/photos/16974019/pexels-photo-16974019.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "badge": "baru"
+  },
+  {
+    "id": "hampers-teh-artisan",
+    "name": "Hampers Teh Artisan",
+    "slug": "hampers-teh-artisan",
+    "category": "cake-gift",
+    "subcategory": "hampers",
+    "subcategoryLabel": "Hampers",
+    "occasions": [
+      "corporate",
+      "anniversary"
+    ],
+    "priceIDR": 195000,
+    "image": "https://images.pexels.com/photos/31651860/pexels-photo-31651860.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "badge": "baru"
+  },
+  {
+    "id": "papan-bunga-mini",
+    "name": "Papan Bunga Mini",
+    "slug": "papan-bunga-mini",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga",
+    "subcategoryLabel": "Papan Bunga",
+    "occasions": [
+      "congratulations",
+      "graduation"
+    ],
+    "priceIDR": 450000,
+    "image": "https://images.pexels.com/photos/32476154/pexels-photo-32476154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "badge": "baru"
+  },
+  {
+    "id": "standing-flower-korean-style",
+    "name": "Standing Flower Korean Style",
+    "slug": "standing-flower-korean-style",
+    "category": "bunga-papan",
+    "subcategory": "standing-flower",
+    "subcategoryLabel": "Standing Flower",
+    "occasions": [
+      "wedding",
+      "congratulations"
+    ],
+    "priceIDR": 1050000,
+    "image": "https://images.pexels.com/photos/33316219/pexels-photo-33316219.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "badge": "baru"
+  },
+  {
+    "id": "papan-bunga-digital-interaktif",
+    "name": "Papan Bunga Digital Interaktif",
+    "slug": "papan-bunga-digital-interaktif",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga-led",
+    "subcategoryLabel": "Papan Bunga LED",
+    "occasions": [
+      "corporate",
+      "congratulations"
+    ],
+    "priceIDR": 1450000,
+    "image": "https://images.pexels.com/photos/29539918/pexels-photo-29539918.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "badge": "baru"
   }
 ]
