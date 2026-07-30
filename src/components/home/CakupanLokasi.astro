@@ -1,5 +1,6 @@
 ---
 // Airtable signature full-bleed card: one bold stat, punctuates the page rhythm.
+import { withBase } from "../../lib/base";
 ---
 
 <section class="mx-auto max-w-6xl px-4 py-12 md:py-16">
@@ -9,7 +10,7 @@
       Pengiriman flower, cake, dan gift ke 35 kota se-Indonesia, dari Jakarta sampai Jayapura.
     </p>
     <a
-      href="/lokasi/"
+      href={withBase("/lokasi/")}
       class="mt-6 inline-block rounded-full bg-cta px-6 py-3 text-sm font-medium text-ink hover:bg-cta-active"
     >
       Lihat Semua Kota

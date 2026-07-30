@@ -1,5 +1,6 @@
 ---
 import { waLink } from "../../lib/waLink";
+import { withBase } from "../../lib/base";
 ---
 
 <section class="mx-auto max-w-3xl px-4 py-12 text-center md:py-16">
@@ -19,7 +20,7 @@ import { waLink } from "../../lib/waLink";
       Order via WhatsApp
     </a>
     <a
-      href="/katalog-blumeandco.pdf"
+      href={withBase("/katalog-blumeandco.pdf")}
       class="rounded-full border border-hairline px-6 py-3 text-sm font-medium text-ink hover:bg-surface-card"
     >
       Download Katalog

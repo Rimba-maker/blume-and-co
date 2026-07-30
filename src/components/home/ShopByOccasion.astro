@@ -2,6 +2,7 @@
 // Pinterest category-tile pattern: 1:1 photo + label, discovery grid.
 import { getCollection } from "astro:content";
 import { occasionImage } from "../../lib/occasionImages";
+import { withBase } from "../../lib/base";
 
 const occasions = await getCollection("occasions");
 ---
@@ -12,7 +13,7 @@ const occasions = await getCollection("occasions");
     {occasions.map((occasion) => {
       const isSolemn = occasion.data.slug === "sympathy-funeral";
       return (
-        <a href={`/occasion/${occasion.data.slug}/`} class="group text-center">
+        <a href={withBase(`/occasion/${occasion.data.slug}/`)} class="group text-center">
           <div class="aspect-square overflow-hidden rounded-md bg-surface-card">
             <img
               src={occasionImage(occasion.data.slug, 400)}

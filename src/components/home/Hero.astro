@@ -2,6 +2,7 @@
 // Pinterest asymmetric split hero: copy left, overlapping product photography right.
 import { getCollection } from "astro:content";
 import { waLink } from "../../lib/waLink";
+import { withBase } from "../../lib/base";
 
 const products = await getCollection("products");
 const showcase = products.filter((p) => p.data.badge !== "none").slice(0, 3);
@@ -25,7 +26,7 @@ const showcase = products.filter((p) => p.data.badge !== "none").slice(0, 3);
         Order via WhatsApp
       </a>
       <a
-        href="/katalog-blumeandco.pdf"
+        href={withBase("/katalog-blumeandco.pdf")}
         class="rounded-full border border-hairline px-6 py-3 text-sm font-medium text-ink hover:bg-surface-card"
       >
         Download Katalog

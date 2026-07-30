@@ -1,24 +1,26 @@
 ---
 // Notion pastel-tinted feature card pattern for the 3 top-level category doors.
+import { withBase } from "../../lib/base";
+
 const categories = [
   {
     name: "Flower",
     blurb: "Buket segar, forever flower, sampai bunga meja.",
-    href: "/flower/",
+    href: withBase("/flower/"),
     image: "https://images.pexels.com/photos/5362014/pexels-photo-5362014.jpeg?auto=compress&cs=tinysrgb&w=900",
     tint: "from-pastel-pink/60",
   },
   {
     name: "Cake & Gift",
     blurb: "Cake custom, hampers, sampai kado personalized.",
-    href: "/cake-gift/",
+    href: withBase("/cake-gift/"),
     image: "https://images.pexels.com/photos/8015149/pexels-photo-8015149.jpeg?auto=compress&cs=tinysrgb&w=900",
     tint: "from-primary/50",
   },
   {
     name: "Bunga Papan",
     blurb: "Papan bunga dan standing flower untuk acara besar.",
-    href: "/bunga-papan/",
+    href: withBase("/bunga-papan/"),
     image: "https://images.pexels.com/photos/32176843/pexels-photo-32176843.jpeg?auto=compress&cs=tinysrgb&w=900",
     tint: "from-pastel-purple/55",
   },

@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react";
 import ProductCard from "../produk/ProductCard.astro";
+import { withBase } from "../../lib/base";
 
 const products = await getCollection("products");
 const newArrivals = products.filter((p) => p.data.badge === "baru");
@@ -10,7 +11,7 @@ const newArrivals = products.filter((p) => p.data.badge === "baru");
 <section class="mx-auto max-w-6xl px-4 py-12 md:py-16" data-scroll-strip>
   <div class="mb-6 flex items-end justify-between gap-4">
     <h2 class="font-display text-2xl font-semibold text-ink md:text-3xl">New Arrival</h2>
-    <a href="/new-arrival/" class="text-sm font-semibold text-ink underline">Lihat Semua</a>
+    <a href={withBase("/new-arrival/")} class="text-sm font-semibold text-ink underline">Lihat Semua</a>
   </div>
 
   <div class="group relative">
