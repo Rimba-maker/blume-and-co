@@ -10,46 +10,45 @@ const newArrivals = products.filter((p) => p.data.badge === "baru");
 <section class="mx-auto max-w-6xl px-4 py-16" data-scroll-strip>
   <div class="mb-6 flex items-end justify-between gap-4">
     <h2 class="font-display text-2xl font-semibold text-ink md:text-3xl">New Arrival</h2>
-    <div class="flex items-center gap-4">
-      <a href="/new-arrival/" class="text-sm font-semibold text-ink underline">Lihat Semua</a>
-      <div class="flex items-center gap-2">
-        <button
-          type="button"
-          data-scroll-prev
-          aria-label="Sebelumnya"
-          class="flex h-9 w-9 items-center justify-center rounded-full border border-hairline text-ink transition-colors hover:bg-surface-card disabled:pointer-events-none disabled:opacity-30"
-        >
-          <CaretLeftIcon size={16} weight="bold" />
-        </button>
-        <button
-          type="button"
-          data-scroll-next
-          aria-label="Selanjutnya"
-          class="flex h-9 w-9 items-center justify-center rounded-full border border-hairline text-ink transition-colors hover:bg-surface-card disabled:pointer-events-none disabled:opacity-30"
-        >
-          <CaretRightIcon size={16} weight="bold" />
-        </button>
-      </div>
-    </div>
+    <a href="/new-arrival/" class="text-sm font-semibold text-ink underline">Lihat Semua</a>
   </div>
 
-  <div
-    data-scroll-track
-    class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-  >
-    {newArrivals.map((product) => (
-      <div class="w-48 flex-none snap-start md:w-56">
-        <ProductCard
-          name={product.data.name}
-          category={product.data.category}
-          subcategoryLabel={product.data.subcategoryLabel}
-          priceIDR={product.data.priceIDR}
-          priceNote={product.data.priceNote}
-          image={product.data.image}
-          badge={product.data.badge}
-        />
-      </div>
-    ))}
+  <div class="group relative">
+    <div
+      data-scroll-track
+      class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+    >
+      {newArrivals.map((product) => (
+        <div class="w-48 flex-none snap-start md:w-56">
+          <ProductCard
+            name={product.data.name}
+            category={product.data.category}
+            subcategoryLabel={product.data.subcategoryLabel}
+            priceIDR={product.data.priceIDR}
+            priceNote={product.data.priceNote}
+            image={product.data.image}
+            badge={product.data.badge}
+          />
+        </div>
+      ))}
+    </div>
+
+    <button
+      type="button"
+      data-scroll-prev
+      aria-label="Sebelumnya"
+      class="absolute left-2 top-[38%] hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-bg/90 text-ink opacity-0 shadow-lg backdrop-blur transition-opacity group-hover:opacity-100 hover:bg-bg disabled:pointer-events-none disabled:opacity-0 md:flex"
+    >
+      <CaretLeftIcon size={18} weight="bold" />
+    </button>
+    <button
+      type="button"
+      data-scroll-next
+      aria-label="Selanjutnya"
+      class="absolute right-2 top-[38%] hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-bg/90 text-ink opacity-0 shadow-lg backdrop-blur transition-opacity group-hover:opacity-100 hover:bg-bg disabled:pointer-events-none disabled:opacity-0 md:flex"
+    >
+      <CaretRightIcon size={18} weight="bold" />
+    </button>
   </div>
 </section>
 
