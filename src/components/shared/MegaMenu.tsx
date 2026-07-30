@@ -31,7 +31,7 @@ export default function MegaMenu({ items }: Props) {
   };
   const closeSoon = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
-    closeTimer.current = setTimeout(() => setOpenDesktop(null), 200);
+    closeTimer.current = setTimeout(() => setOpenDesktop(null), 350);
   };
 
   const panelTransition = reduceMotion
@@ -74,7 +74,7 @@ export default function MegaMenu({ items }: Props) {
                     className={
                       item.dropdown.kind === "grouped"
                         ? "absolute left-1/2 top-full w-[min(90vw,720px)] -translate-x-1/2 pt-3"
-                        : "absolute left-0 top-full w-56 pt-3"
+                        : "absolute left-1/2 top-full w-56 -translate-x-1/2 pt-3"
                     }
                   >
                     {item.dropdown.kind === "simple" ? (
