@@ -1,6 +1,7 @@
 ---
 // Pinterest category-tile pattern: 1:1 photo + label, discovery grid.
 import { getCollection } from "astro:content";
+import { occasionImage } from "../../lib/occasionImages";
 
 const occasions = await getCollection("occasions");
 ---
@@ -12,7 +13,7 @@ const occasions = await getCollection("occasions");
       <a href={`/occasion/${occasion.data.slug}/`} class="group text-center">
         <div class="aspect-square overflow-hidden rounded-md bg-surface-card">
           <img
-            src={`https://picsum.photos/seed/blume-occasion-${occasion.data.slug}/400/400`}
+            src={occasionImage(occasion.data.slug, 400)}
             alt={occasion.data.name}
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
