@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import ProductGrid from "../../components/produk/ProductGridReveal.astro";
 import { cakeGiftGroups } from "../../lib/navData";
+import { withBase } from "../../lib/base";
 
 const products = await getCollection("products");
 const items = products.filter((p) => p.data.category === "cake-gift").map((p) => p.data);
@@ -27,7 +28,7 @@ const items = products.filter((p) => p.data.category === "cake-gift").map((p) =>
           <ul class="flex flex-col gap-1.5">
             {group.items.map((s) => (
               <li>
-                <a href={`/cake-gift/${s.slug}/`} class="text-sm text-ink hover:underline">
+                <a href={withBase(`/cake-gift/${s.slug}/`)} class="text-sm text-ink hover:underline">
                   {s.label}
                 </a>
               </li>

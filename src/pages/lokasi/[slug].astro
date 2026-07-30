@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import ProductGrid from "../../components/produk/ProductGridReveal.astro";
 import { waLink } from "../../lib/waLink";
+import { withBase } from "../../lib/base";
 
 export async function getStaticPaths() {
   const locations = await getCollection("locations");
@@ -32,7 +33,7 @@ const jsonLd = {
 
   <section class="mx-auto max-w-6xl px-4 pb-8 pt-10 md:pt-16">
     <p class="text-sm text-muted">
-      <a href="/lokasi/" class="hover:underline">Lokasi</a> / {location.region} / {location.city}
+      <a href={withBase("/lokasi/")} class="hover:underline">Lokasi</a> / {location.region} / {location.city}
     </p>
     <h1 class="mt-2 font-display text-3xl font-semibold text-ink md:text-5xl">
       Kirim Bunga &amp; Kado ke {location.city}

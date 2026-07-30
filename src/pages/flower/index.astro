@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import ProductGrid from "../../components/produk/ProductGridReveal.astro";
 import { flowerSubcategories } from "../../lib/navData";
+import { withBase } from "../../lib/base";
 
 const products = await getCollection("products");
 const flowerProducts = products.filter((p) => p.data.category === "flower").map((p) => p.data);
@@ -23,7 +24,7 @@ const flowerProducts = products.filter((p) => p.data.category === "flower").map(
     <div class="flex flex-wrap gap-2">
       {flowerSubcategories.map((s) => (
         <a
-          href={`/flower/${s.slug}/`}
+          href={withBase(`/flower/${s.slug}/`)}
           class="rounded-full border border-hairline px-4 py-2 text-sm text-ink hover:bg-surface-card"
         >
           {s.label}

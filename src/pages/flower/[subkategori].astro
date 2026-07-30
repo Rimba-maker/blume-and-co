@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import ProductGrid from "../../components/produk/ProductGrid.astro";
 import { flowerSubcategories } from "../../lib/navData";
+import { withBase } from "../../lib/base";
 
 export async function getStaticPaths() {
   return flowerSubcategories.map((s) => ({ params: { subkategori: s.slug }, props: { label: s.label } }));
@@ -23,7 +24,7 @@ const items = products
 >
   <section class="mx-auto max-w-6xl px-4 pb-8 pt-10 md:pt-16">
     <p class="text-sm text-muted">
-      <a href="/flower/" class="hover:underline">Flower</a> / {label}
+      <a href={withBase("/flower/")} class="hover:underline">Flower</a> / {label}
     </p>
     <h1 class="mt-2 font-display text-3xl font-semibold text-ink md:text-5xl">{label}</h1>
   </section>
