@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { ListIcon as List, XIcon as X, CaretDownIcon as CaretDown } from "@phosphor-icons/react";
+import { withBase } from "../../lib/base";
 
 type Link = { label: string; href: string };
 type SimpleDropdown = { kind: "simple"; items: Link[] };
@@ -42,7 +43,7 @@ export default function MegaMenu({ items }: Props) {
     <>
       {/* Desktop capsule nav */}
       <nav className="mx-auto hidden max-w-6xl grid-cols-[1fr_auto_1fr] items-center gap-4 rounded-full border border-hairline bg-bg/90 px-6 py-3 shadow-sm backdrop-blur lg:grid">
-        <a href="/" className="font-display text-lg font-semibold tracking-tight text-ink">
+        <a href={withBase("/")} className="font-display text-lg font-semibold tracking-tight text-ink">
           Blume &amp; Co.
         </a>
 
@@ -118,7 +119,7 @@ export default function MegaMenu({ items }: Props) {
 
       {/* Mobile bar */}
       <div className="flex items-center justify-between rounded-full border border-hairline bg-bg/90 px-4 py-3 shadow-sm backdrop-blur lg:hidden">
-        <a href="/" className="font-display text-base font-semibold tracking-tight text-ink">
+        <a href={withBase("/")} className="font-display text-base font-semibold tracking-tight text-ink">
           Blume &amp; Co.
         </a>
         <button

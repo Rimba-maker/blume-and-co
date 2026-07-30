@@ -7,55 +7,56 @@ import {
   cakeGiftGroups,
   locationRegions,
 } from "../../lib/navData";
+import { withBase } from "../../lib/base";
 
 const occasions = await getCollection("occasions");
 
 const items: NavItem[] = [
-  { label: "New Arrival", href: "/new-arrival/" },
+  { label: "New Arrival", href: withBase("/new-arrival/") },
   {
     label: "Flower",
-    href: "/flower/",
+    href: withBase("/flower/"),
     dropdown: {
       kind: "simple",
-      items: flowerSubcategories.map((s) => ({ label: s.label, href: `/flower/${s.slug}/` })),
+      items: flowerSubcategories.map((s) => ({ label: s.label, href: withBase(`/flower/${s.slug}/`) })),
     },
   },
   {
     label: "Cake & Gift",
-    href: "/cake-gift/",
+    href: withBase("/cake-gift/"),
     dropdown: {
       kind: "grouped",
       groups: cakeGiftGroups.map((g) => ({
         title: g.title,
         tint: g.tint,
-        items: g.items.map((s) => ({ label: s.label, href: `/cake-gift/${s.slug}/` })),
+        items: g.items.map((s) => ({ label: s.label, href: withBase(`/cake-gift/${s.slug}/`) })),
       })),
     },
   },
   {
     label: "Bunga Papan",
-    href: "/bunga-papan/",
+    href: withBase("/bunga-papan/"),
     dropdown: {
       kind: "simple",
-      items: bungaPapanSubcategories.map((s) => ({ label: s.label, href: `/bunga-papan/${s.slug}/` })),
+      items: bungaPapanSubcategories.map((s) => ({ label: s.label, href: withBase(`/bunga-papan/${s.slug}/`) })),
     },
   },
   {
     label: "Occasion",
-    href: "/occasion/",
+    href: withBase("/occasion/"),
     dropdown: {
       kind: "simple",
-      items: occasions.map((o) => ({ label: o.data.name, href: `/occasion/${o.data.slug}/` })),
+      items: occasions.map((o) => ({ label: o.data.name, href: withBase(`/occasion/${o.data.slug}/`) })),
     },
   },
   {
     label: "Location",
-    href: "/lokasi/",
+    href: withBase("/lokasi/"),
     dropdown: {
       kind: "grouped",
       groups: locationRegions.map((r) => ({
         title: r.region,
-        items: r.cities.map((c) => ({ label: c.label, href: `/lokasi/${c.slug}/` })),
+        items: r.cities.map((c) => ({ label: c.label, href: withBase(`/lokasi/${c.slug}/`) })),
       })),
     },
   },
