@@ -25,7 +25,7 @@ const badgeLabel = badge === "best-seller" ? "Best Seller" : badge === "baru" ? 
 const orderHref = waLink.product(name, category, subcategoryLabel);
 ---
 
-<article class="group overflow-hidden rounded-md bg-surface-card">
+<article class="group flex h-full flex-col overflow-hidden rounded-md bg-surface-card">
   <div class="relative aspect-[4/5] overflow-hidden rounded-md">
     <img
       src={image}
@@ -39,12 +39,14 @@ const orderHref = waLink.product(name, category, subcategoryLabel);
       </span>
     )}
   </div>
-  <div class="p-3 sm:p-4">
-    <h3 class="font-display text-base font-medium leading-snug text-ink">{name}</h3>
-    <p class="mt-1 text-sm text-muted">
-      {price}
-      {priceNote && <span class="block text-xs">{priceNote}</span>}
-    </p>
+  <div class="flex flex-1 flex-col p-3 sm:p-4">
+    <div class="flex-1">
+      <h3 class="font-display text-base font-medium leading-snug text-ink">{name}</h3>
+      <p class="mt-1 text-sm text-muted">
+        {price}
+        {priceNote && <span class="block text-xs">{priceNote}</span>}
+      </p>
+    </div>
     <a
       href={orderHref}
       target="_blank"
