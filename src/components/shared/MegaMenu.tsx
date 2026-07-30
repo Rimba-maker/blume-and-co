@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { ListIcon as List, XIcon as X, CaretDownIcon as CaretDown } from "@phosphor-icons/react";
 
@@ -23,6 +23,16 @@ export default function MegaMenu({ items }: Props) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const reduceMotion = useReducedMotion();
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const openNow = (label: string) => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setOpenDesktop(label);
+  };
+  const closeSoon = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    closeTimer.current = setTimeout(() => setOpenDesktop(null), 200);
+  };
 
   const panelTransition = reduceMotion
     ? { duration: 0 }
@@ -41,8 +51,8 @@ export default function MegaMenu({ items }: Props) {
             <li
               key={item.label}
               className="relative"
-              onMouseEnter={() => item.dropdown && setOpenDesktop(item.label)}
-              onMouseLeave={() => setOpenDesktop(null)}
+              onMouseEnter={() => item.dropdown && openNow(item.label)}
+              onMouseLeave={closeSoon}
             >
               <a
                 href={item.href}
@@ -59,14 +69,16 @@ export default function MegaMenu({ items }: Props) {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -8 }}
                     transition={panelTransition}
+                    onMouseEnter={() => openNow(item.label)}
+                    onMouseLeave={closeSoon}
                     className={
                       item.dropdown.kind === "grouped"
-                        ? "absolute left-1/2 top-[calc(100%+12px)] w-[min(90vw,720px)] -translate-x-1/2 rounded-lg border border-hairline bg-bg p-6 shadow-lg"
-                        : "absolute left-0 top-[calc(100%+12px)] w-56 rounded-lg border border-hairline bg-bg p-3 shadow-lg"
+                        ? "absolute left-1/2 top-full w-[min(90vw,720px)] -translate-x-1/2 pt-3"
+                        : "absolute left-0 top-full w-56 pt-3"
                     }
                   >
                     {item.dropdown.kind === "simple" ? (
-                      <ul className="flex flex-col">
+                      <ul className="flex flex-col rounded-lg border border-hairline bg-bg p-3 shadow-lg">
                         {item.dropdown.items.map((link) => (
                           <li key={link.href}>
                             <a
@@ -79,7 +91,7 @@ export default function MegaMenu({ items }: Props) {
                         ))}
                       </ul>
                     ) : (
-                      <div className="grid grid-cols-5 gap-4">
+                      <div className="grid grid-cols-5 gap-4 rounded-lg border border-hairline bg-bg p-6 shadow-lg">
                         {item.dropdown.groups.map((group) => (
                           <div key={group.title} className={`rounded-md p-3 ${group.tint ?? ""}`}>
                             <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">
