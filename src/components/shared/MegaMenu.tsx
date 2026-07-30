@@ -71,14 +71,10 @@ export default function MegaMenu({ items }: Props) {
                     transition={panelTransition}
                     onMouseEnter={() => openNow(item.label)}
                     onMouseLeave={closeSoon}
-                    className={
-                      item.dropdown.kind === "grouped"
-                        ? "absolute left-1/2 top-0 w-[min(90vw,720px)] -translate-x-1/2 pt-12"
-                        : "absolute left-1/2 top-0 w-56 -translate-x-1/2 pt-12"
-                    }
+                    className="absolute left-1/2 top-0 w-[min(90vw,720px)] -translate-x-1/2 pt-12"
                   >
                     {item.dropdown.kind === "simple" ? (
-                      <ul className="flex flex-col rounded-lg border border-hairline bg-bg p-3 shadow-lg">
+                      <ul className="grid grid-cols-3 gap-x-6 gap-y-1 rounded-lg border border-hairline bg-bg p-6 shadow-lg">
                         {item.dropdown.items.map((link) => (
                           <li key={link.href}>
                             <a
