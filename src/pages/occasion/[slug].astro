@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import ProductGrid from "../../components/produk/ProductGrid.astro";
+import ProductGrid from "../../components/produk/ProductGridReveal.astro";
 
 export async function getStaticPaths() {
   const occasions = await getCollection("occasions");
@@ -20,7 +20,7 @@ const items = products
   title={`${occasion.name} Gift & Flowers - Blume & Co.`}
   description={`Kado spesial untuk ${occasion.name}, flower, cake, dan gift pilihan. Order via WhatsApp.`}
 >
-  <section class="mx-auto max-w-6xl px-4 pb-8 pt-16">
+  <section class="mx-auto max-w-6xl px-4 pb-8 pt-10 md:pt-16">
     <p class="text-sm text-muted">
       <a href="/occasion/" class="hover:underline">Occasion</a> / {occasion.name}
     </p>

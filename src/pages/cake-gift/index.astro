@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import ProductGrid from "../../components/produk/ProductGrid.astro";
+import ProductGrid from "../../components/produk/ProductGridReveal.astro";
 import { cakeGiftGroups } from "../../lib/navData";
 
 const products = await getCollection("products");
@@ -12,7 +12,7 @@ const items = products.filter((p) => p.data.category === "cake-gift").map((p) =>
   title="Cake & Gift - Blume & Co."
   description="Cake, hampers, dan gift personalized berkualitas, order gampang via WhatsApp. Kirim ke 35 kota se-Indonesia."
 >
-  <section class="mx-auto max-w-6xl px-4 pb-8 pt-16">
+  <section class="mx-auto max-w-6xl px-4 pb-8 pt-10 md:pt-16">
     <h1 class="font-display text-3xl font-semibold text-ink md:text-5xl">Cake & Gift</h1>
     <p class="mt-3 max-w-lg text-muted">
       Cake custom, hampers, sampai kado personalized untuk tiap momen.

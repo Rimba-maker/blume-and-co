@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import ProductGrid from "../../components/produk/ProductGrid.astro";
+import ProductGrid from "../../components/produk/ProductGridReveal.astro";
 import { bungaPapanSubcategories } from "../../lib/navData";
 
 const products = await getCollection("products");
@@ -12,7 +12,7 @@ const items = products.filter((p) => p.data.category === "bunga-papan").map((p) 
   title="Bunga Papan - Blume & Co."
   description="Bunga papan dan standing flower berkualitas, order gampang via WhatsApp. Kirim ke 35 kota se-Indonesia."
 >
-  <section class="mx-auto max-w-6xl px-4 pb-8 pt-16">
+  <section class="mx-auto max-w-6xl px-4 pb-8 pt-10 md:pt-16">
     <h1 class="font-display text-3xl font-semibold text-ink md:text-5xl">Bunga Papan</h1>
     <p class="mt-3 max-w-lg text-muted">
       Papan bunga, standing flower, sampai standing giant flower untuk acara besar dan korporat.

@@ -1,0 +1,54 @@
+---
+// Progressive reveal for large catalogs (30+ items) so mobile doesn't have to
+// scroll through the whole list before reaching the footer.
+import type { CollectionEntry } from "astro:content";
+import ProductCard from "./ProductCard.astro";
+
+interface Props {
+  products: CollectionEntry<"products">["data"][];
+  initialCount?: number;
+}
+
+const { products, initialCount = 12 } = Astro.props;
+const hasMore = products.length > initialCount;
+---
+
+<div data-product-reveal>
+  <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
+    {products.map((product, i) => (
+      <div class:list={i >= initialCount ? "hidden" : undefined} data-reveal-item>
+        <ProductCard
+          name={product.name}
+          category={product.category}
+          subcategoryLabel={product.subcategoryLabel}
+          priceIDR={product.priceIDR}
+          priceNote={product.priceNote}
+          image={product.image}
+          badge={product.badge}
+        />
+      </div>
+    ))}
+  </div>
+
+  {hasMore && (
+    <div class="mt-8 flex justify-center">
+      <button
+        type="button"
+        data-reveal-more
+        class="rounded-full border border-hairline px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-surface-card"
+      >
+        Tampilkan {products.length - initialCount} Produk Lagi
+      </button>
+    </div>
+  )}
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-product-reveal]").forEach((wrap) => {
+    const btn = wrap.querySelector<HTMLButtonElement>("[data-reveal-more]");
+    btn?.addEventListener("click", () => {
+      wrap.querySelectorAll<HTMLElement>("[data-reveal-item].hidden").forEach((el) => el.classList.remove("hidden"));
+      btn.remove();
+    });
+  });
+</script>

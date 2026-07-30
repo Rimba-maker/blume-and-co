@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import ProductGrid from "../../components/produk/ProductGrid.astro";
+import ProductGrid from "../../components/produk/ProductGridReveal.astro";
 import { flowerSubcategories } from "../../lib/navData";
 
 const products = await getCollection("products");
@@ -12,7 +12,7 @@ const flowerProducts = products.filter((p) => p.data.category === "flower").map(
   title="Flower - Blume & Co."
   description="Flower berkualitas, order gampang via WhatsApp. Kirim ke 35 kota se-Indonesia."
 >
-  <section class="mx-auto max-w-6xl px-4 pb-8 pt-16">
+  <section class="mx-auto max-w-6xl px-4 pb-8 pt-10 md:pt-16">
     <h1 class="font-display text-3xl font-semibold text-ink md:text-5xl">Flower</h1>
     <p class="mt-3 max-w-lg text-muted">
       Buket segar, forever flower, bloom box, sampai bunga meja untuk tiap momen.

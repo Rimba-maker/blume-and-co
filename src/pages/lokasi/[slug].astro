@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import ProductGrid from "../../components/produk/ProductGrid.astro";
+import ProductGrid from "../../components/produk/ProductGridReveal.astro";
 import { waLink } from "../../lib/waLink";
 
 export async function getStaticPaths() {
@@ -30,7 +30,7 @@ const jsonLd = {
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
 
-  <section class="mx-auto max-w-6xl px-4 pb-8 pt-16">
+  <section class="mx-auto max-w-6xl px-4 pb-8 pt-10 md:pt-16">
     <p class="text-sm text-muted">
       <a href="/lokasi/" class="hover:underline">Lokasi</a> / {location.region} / {location.city}
     </p>
