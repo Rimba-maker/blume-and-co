@@ -1,0 +1,59 @@
+---
+// Pinterest pin-card pattern: full-bleed image, overlay-pill badge, flat meta below.
+import { WhatsappLogoIcon as WhatsappLogo } from "@phosphor-icons/react";
+import { waLink } from "../../lib/waLink";
+
+interface Props {
+  name: string;
+  category: string;
+  subcategoryLabel: string;
+  priceIDR: number;
+  priceNote?: string;
+  image: string;
+  badge?: "best-seller" | "baru" | "none";
+}
+
+const { name, category, subcategoryLabel, priceIDR, priceNote, image, badge = "none" } = Astro.props;
+
+const price = new Intl.NumberFormat("id-ID", {
+  style: "currency",
+  currency: "IDR",
+  maximumFractionDigits: 0,
+}).format(priceIDR);
+
+const badgeLabel = badge === "best-seller" ? "Best Seller" : badge === "baru" ? "Baru" : null;
+const orderHref = waLink.product(name, category, subcategoryLabel);
+---
+
+<article class="group overflow-hidden rounded-md bg-surface-card">
+  <div class="relative aspect-[4/5] overflow-hidden rounded-md">
+    <img
+      src={image}
+      alt={name}
+      loading="lazy"
+      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+    />
+    {badgeLabel && (
+      <span class="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-xs font-medium text-ink">
+        {badgeLabel}
+      </span>
+    )}
+  </div>
+  <div class="p-3 sm:p-4">
+    <h3 class="font-display text-base font-medium leading-snug text-ink">{name}</h3>
+    <p class="mt-1 text-sm text-muted">
+      {price}
+      {priceNote && <span class="block text-xs">{priceNote}</span>}
+    </p>
+    <a
+      href={orderHref}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-full bg-cta px-3 py-2.5 text-sm font-medium text-ink transition-colors hover:bg-cta-active active:scale-[0.98] sm:px-4"
+    >
+      <WhatsappLogo size={18} weight="fill" className="shrink-0" />
+      <span class="sm:hidden">Pesan via WA</span>
+      <span class="hidden sm:inline">Order via WhatsApp</span>
+    </a>
+  </div>
+</article>

@@ -1,0 +1,35 @@
+---
+import { BookOpenIcon as BookOpen, ChatCircleDotsIcon as ChatCircleDots, CheckCircleIcon as CheckCircle } from "@phosphor-icons/react";
+import { waLink } from "../../lib/waLink";
+
+const steps = [
+  { icon: BookOpen, title: "Lihat Katalog", desc: "Cek produk di website atau download katalog PDF.", tint: "bg-pastel-pink/40" },
+  { icon: ChatCircleDots, title: "Chat WhatsApp", desc: "Kirim nama produk yang kamu mau lewat WhatsApp.", tint: "bg-primary/20" },
+  { icon: CheckCircle, title: "Konfirmasi & Bayar", desc: "Tim kami konfirmasi ketersediaan dan bantu proses pembayaran.", tint: "bg-pastel-purple/35" },
+];
+---
+
+<section id="cara-pesan" class="mx-auto max-w-6xl scroll-mt-24 px-4 py-16">
+  <h2 class="mb-6 font-display text-2xl font-semibold text-ink md:text-3xl">Cara Pesan</h2>
+  <div class="grid gap-4 md:grid-cols-3">
+    {steps.map((step, i) => (
+      <div class={`rounded-md p-6 ${step.tint}`}>
+        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-bg text-sm font-semibold text-ink">
+          {i + 1}
+        </div>
+        <step.icon size={28} className="mt-4 text-ink" />
+        <h3 class="mt-3 font-display text-lg font-semibold text-ink">{step.title}</h3>
+        <p class="mt-1 text-sm text-ink/75">{step.desc}</p>
+      </div>
+    ))}
+  </div>
+
+  <a
+    href={waLink.generic()}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="mt-8 inline-block rounded-full bg-cta px-6 py-3 text-sm font-medium text-ink hover:bg-cta-active"
+  >
+    Order via WhatsApp
+  </a>
+</section>

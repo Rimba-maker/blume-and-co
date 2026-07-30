@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import ProductGrid from "../../components/produk/ProductGrid.astro";
+import { cakeGiftGroups } from "../../lib/navData";
+
+const BUDGET_SLUG = "below-rp-300-000";
+
+export async function getStaticPaths() {
+  const budgetSlug = "below-rp-300-000";
+  const subcategoryPaths = cakeGiftGroups.flatMap((group) =>
+    group.items
+      .filter((s) => s.slug !== budgetSlug)
+      .map((s) => ({ params: { subkategori: s.slug }, props: { label: s.label } }))
+  );
+  return [
+    ...subcategoryPaths,
+    { params: { subkategori: budgetSlug }, props: { label: "Below Rp 300.000" } },
+  ];
+}
+
+const { subkategori } = Astro.params;
+const { label } = Astro.props;
+const isBudgetFilter = subkategori === BUDGET_SLUG;
+
+const products = await getCollection("products");
+const items = products
+  .filter((p) =>
+    isBudgetFilter
+      ? p.data.category === "cake-gift" && p.data.priceIDR < 300000
+      : p.data.category === "cake-gift" && p.data.subcategory === subkategori
+  )
+  .map((p) => p.data);
+---
+
+<Layout
+  title={`${label} - Blume & Co.`}
+  description={`${label} berkualitas, order gampang via WhatsApp. Kirim ke 35 kota se-Indonesia.`}
+>
+  <section class="mx-auto max-w-6xl px-4 pb-8 pt-16">
+    <p class="text-sm text-muted">
+      <a href="/cake-gift/" class="hover:underline">Cake & Gift</a> / {label}
+    </p>
+    <h1 class="mt-2 font-display text-3xl font-semibold text-ink md:text-5xl">{label}</h1>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-8">
+    {items.length > 0 ? (
+      <ProductGrid products={items} />
+    ) : (
+      <p class="text-muted">Produk untuk kategori ini menyusul ya, chat WhatsApp kami buat cek ketersediaan.</p>
+    )}
+  </section>
+</Layout>

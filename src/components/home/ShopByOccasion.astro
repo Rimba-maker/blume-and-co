@@ -1,0 +1,24 @@
+---
+// Pinterest category-tile pattern: 1:1 photo + label, discovery grid.
+import { getCollection } from "astro:content";
+
+const occasions = await getCollection("occasions");
+---
+
+<section class="mx-auto max-w-6xl px-4 py-16">
+  <h2 class="mb-6 font-display text-2xl font-semibold text-ink md:text-3xl">Kado untuk Tiap Momen</h2>
+  <div class="grid grid-cols-3 gap-3 md:grid-cols-5 md:gap-4">
+    {occasions.map((occasion) => (
+      <a href={`/occasion/${occasion.data.slug}/`} class="group text-center">
+        <div class="aspect-square overflow-hidden rounded-md bg-surface-card">
+          <img
+            src={`https://picsum.photos/seed/blume-occasion-${occasion.data.slug}/400/400`}
+            alt={occasion.data.name}
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+        <p class="mt-2 text-sm font-medium text-ink">{occasion.data.name}</p>
+      </a>
+    ))}
+  </div>
+</section>

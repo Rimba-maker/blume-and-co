@@ -1,0 +1,56 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import ProductGrid from "../../components/produk/ProductGrid.astro";
+import { waLink } from "../../lib/waLink";
+
+export async function getStaticPaths() {
+  const locations = await getCollection("locations");
+  return locations.map((l) => ({ params: { slug: l.data.slug }, props: { location: l.data } }));
+}
+
+const { location } = Astro.props;
+
+const products = await getCollection("products");
+const items = products
+  .filter((p) => !p.data.availableCities || p.data.availableCities.includes(location.slug))
+  .map((p) => p.data);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Blume & Co.",
+  areaServed: location.city,
+};
+---
+
+<Layout
+  title={`Kirim Bunga & Kado ke ${location.city} - Blume & Co.`}
+  description={`Pengiriman flower, cake, dan gift ke ${location.city}. ${location.estDeliveryNote}. Order via WhatsApp.`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+
+  <section class="mx-auto max-w-6xl px-4 pb-8 pt-16">
+    <p class="text-sm text-muted">
+      <a href="/lokasi/" class="hover:underline">Lokasi</a> / {location.region} / {location.city}
+    </p>
+    <h1 class="mt-2 font-display text-3xl font-semibold text-ink md:text-5xl">
+      Kirim Bunga &amp; Kado ke {location.city}
+    </h1>
+    <p class="mt-3 max-w-lg text-muted">
+      Blume &amp; Co. melayani pengiriman flower, cake, dan gift ke {location.city}. {location.estDeliveryNote}.
+    </p>
+    <a
+      href={waLink.location("produk pilihan kamu", location.city)}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-4 inline-block rounded-full bg-cta px-6 py-3 text-sm font-medium text-ink hover:bg-cta-active"
+    >
+      Order via WhatsApp
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-8">
+    <ProductGrid products={items} />
+  </section>
+</Layout>

@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import ProductGrid from "../../components/produk/ProductGrid.astro";
+import { flowerSubcategories } from "../../lib/navData";
+
+const products = await getCollection("products");
+const flowerProducts = products.filter((p) => p.data.category === "flower").map((p) => p.data);
+---
+
+<Layout
+  title="Flower - Blume & Co."
+  description="Flower berkualitas, order gampang via WhatsApp. Kirim ke 35 kota se-Indonesia."
+>
+  <section class="mx-auto max-w-6xl px-4 pb-8 pt-16">
+    <h1 class="font-display text-3xl font-semibold text-ink md:text-5xl">Flower</h1>
+    <p class="mt-3 max-w-lg text-muted">
+      Buket segar, forever flower, bloom box, sampai bunga meja untuk tiap momen.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 pb-8">
+    <div class="flex flex-wrap gap-2">
+      {flowerSubcategories.map((s) => (
+        <a
+          href={`/flower/${s.slug}/`}
+          class="rounded-full border border-hairline px-4 py-2 text-sm text-ink hover:bg-surface-card"
+        >
+          {s.label}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-8">
+    <ProductGrid products={flowerProducts} />
+  </section>
+</Layout>

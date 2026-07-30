@@ -1,0 +1,212 @@
+[
+  {
+    "id": "jakarta",
+    "city": "Jakarta",
+    "slug": "jakarta",
+    "region": "Jawa & Bali",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "depok",
+    "city": "Depok",
+    "slug": "depok",
+    "region": "Jawa & Bali",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "bekasi",
+    "city": "Bekasi",
+    "slug": "bekasi",
+    "region": "Jawa & Bali",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "tangerang",
+    "city": "Tangerang",
+    "slug": "tangerang",
+    "region": "Jawa & Bali",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "bogor",
+    "city": "Bogor",
+    "slug": "bogor",
+    "region": "Jawa & Bali",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "bandung",
+    "city": "Bandung",
+    "slug": "bandung",
+    "region": "Jawa & Bali",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "surabaya",
+    "city": "Surabaya",
+    "slug": "surabaya",
+    "region": "Jawa & Bali",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "semarang",
+    "city": "Semarang",
+    "slug": "semarang",
+    "region": "Jawa & Bali",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "surakarta-solo",
+    "city": "Surakarta/Solo",
+    "slug": "surakarta-solo",
+    "region": "Jawa & Bali",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "yogyakarta",
+    "city": "Yogyakarta",
+    "slug": "yogyakarta",
+    "region": "Jawa & Bali",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "bali",
+    "city": "Bali",
+    "slug": "bali",
+    "region": "Jawa & Bali",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "binjai",
+    "city": "Binjai",
+    "slug": "binjai",
+    "region": "Sumatra",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "jambi",
+    "city": "Jambi",
+    "slug": "jambi",
+    "region": "Sumatra",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "lampung",
+    "city": "Lampung",
+    "slug": "lampung",
+    "region": "Sumatra",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "medan",
+    "city": "Medan",
+    "slug": "medan",
+    "region": "Sumatra",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "padang",
+    "city": "Padang",
+    "slug": "padang",
+    "region": "Sumatra",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "palembang",
+    "city": "Palembang",
+    "slug": "palembang",
+    "region": "Sumatra",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "pekanbaru",
+    "city": "Pekanbaru",
+    "slug": "pekanbaru",
+    "region": "Sumatra",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "makassar",
+    "city": "Makassar",
+    "slug": "makassar",
+    "region": "Sulawesi",
+    "estDeliveryNote": "Same-day untuk area kota"
+  },
+  {
+    "id": "manado",
+    "city": "Manado",
+    "slug": "manado",
+    "region": "Sulawesi",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "palu",
+    "city": "Palu",
+    "slug": "palu",
+    "region": "Sulawesi",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "balikpapan",
+    "city": "Balikpapan",
+    "slug": "balikpapan",
+    "region": "Kalimantan",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "banjarmasin",
+    "city": "Banjarmasin",
+    "slug": "banjarmasin",
+    "region": "Kalimantan",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "pontianak",
+    "city": "Pontianak",
+    "slug": "pontianak",
+    "region": "Kalimantan",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "samarinda",
+    "city": "Samarinda",
+    "slug": "samarinda",
+    "region": "Kalimantan",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "kupang",
+    "city": "Kupang",
+    "slug": "kupang",
+    "region": "Nusa Tenggara",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "lombok",
+    "city": "Lombok",
+    "slug": "lombok",
+    "region": "Nusa Tenggara",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "mataram",
+    "city": "Mataram",
+    "slug": "mataram",
+    "region": "Nusa Tenggara",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "sumbawa",
+    "city": "Sumbawa",
+    "slug": "sumbawa",
+    "region": "Nusa Tenggara",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  },
+  {
+    "id": "jayapura",
+    "city": "Jayapura",
+    "slug": "jayapura",
+    "region": "Papua",
+    "estDeliveryNote": "1-2 hari kerja tergantung area"
+  }
+]

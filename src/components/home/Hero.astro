@@ -1,0 +1,60 @@
+---
+// Pinterest asymmetric split hero: copy left, overlapping product photography right.
+import { getCollection } from "astro:content";
+import { waLink } from "../../lib/waLink";
+
+const products = await getCollection("products");
+const showcase = products.filter((p) => p.data.badge !== "none").slice(0, 3);
+---
+
+<section class="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-16 md:grid-cols-2 md:pt-24">
+  <div>
+    <h1 class="font-display text-3xl font-semibold leading-[1.1] text-ink md:text-6xl">
+      Flowers, Cakes &amp; Gifts for Every Occasion.
+    </h1>
+    <p class="mt-4 max-w-md text-base text-muted md:text-lg">
+      Dari wisuda sampai corporate event, dari Jakarta sampai Jayapura, pilih dari katalog kami, order langsung via WhatsApp.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a
+        href={waLink.generic()}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="rounded-full bg-cta px-6 py-3 text-sm font-medium text-ink hover:bg-cta-active"
+      >
+        Order via WhatsApp
+      </a>
+      <a
+        href="/katalog-blumeandco.pdf"
+        class="rounded-full border border-hairline px-6 py-3 text-sm font-medium text-ink hover:bg-surface-card"
+      >
+        Download Katalog
+      </a>
+    </div>
+
+    <div class="mt-8 flex gap-3 md:hidden">
+      {showcase.map((product) => (
+        <img
+          src={product.data.image}
+          alt={product.data.name}
+          class="aspect-[4/5] w-1/3 rounded-md object-cover shadow-lg"
+        />
+      ))}
+    </div>
+  </div>
+
+  <div class="relative hidden h-80 md:block">
+    {showcase.map((product, i) => (
+      <img
+        src={product.data.image}
+        alt={product.data.name}
+        class:list={[
+          "absolute h-72 w-56 rounded-md object-cover shadow-lg",
+          i === 0 && "left-0 top-4 rotate-[-4deg]",
+          i === 1 && "left-32 top-0 rotate-[3deg]",
+          i === 2 && "left-64 top-8 rotate-[-2deg]",
+        ]}
+      />
+    ))}
+  </div>
+</section>

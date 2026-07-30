@@ -1,0 +1,34 @@
+---
+const testimonials = [
+  {
+    quote: "Buket sampai tepat waktu pas hari wisuda adik saya di Surabaya, padahal saya order dari Jakarta.",
+    name: "Dinda Pramesti",
+    role: "Pelanggan, Jakarta",
+  },
+  {
+    quote: "Bunga papan buat pembukaan toko rapi banget, ukurannya sesuai foto katalog.",
+    name: "Rian Hidayat",
+    role: "Pemilik usaha, Bandung",
+  },
+  {
+    quote: "Cake custom-nya sesuai request, chat WhatsApp responnya juga cepat.",
+    name: "Melisa Wong",
+    role: "Pelanggan, Medan",
+  },
+];
+---
+
+<section id="testimoni" class="mx-auto max-w-6xl scroll-mt-24 px-4 py-16">
+  <h2 class="mb-6 font-display text-2xl font-semibold text-ink md:text-3xl">Testimoni</h2>
+  <div class="grid gap-4 md:grid-cols-3">
+    {testimonials.map((t) => (
+      <blockquote class="rounded-md border border-hairline bg-bg p-6">
+        <p class="text-sm leading-relaxed text-ink">&ldquo;{t.quote}&rdquo;</p>
+        <footer class="mt-4 text-sm">
+          <p class="font-medium text-ink">{t.name}</p>
+          <p class="text-muted">{t.role}</p>
+        </footer>
+      </blockquote>
+    ))}
+  </div>
+</section>

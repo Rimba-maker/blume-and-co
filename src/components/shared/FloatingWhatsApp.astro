@@ -1,0 +1,14 @@
+---
+import { WhatsappLogoIcon as WhatsappLogo } from "@phosphor-icons/react";
+import { waLink } from "../../lib/waLink";
+---
+
+<a
+  href={waLink.generic()}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat via WhatsApp"
+  class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-cta text-ink shadow-lg transition-transform hover:scale-105 active:scale-95"
+>
+  <WhatsappLogo size={28} weight="fill" />
+</a>

@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import ProductGrid from "../../components/produk/ProductGrid.astro";
+
+export async function getStaticPaths() {
+  const occasions = await getCollection("occasions");
+  return occasions.map((o) => ({ params: { slug: o.data.slug }, props: { occasion: o.data } }));
+}
+
+const { occasion } = Astro.props;
+
+const products = await getCollection("products");
+const items = products
+  .filter((p) => p.data.occasions.includes(occasion.slug))
+  .map((p) => p.data);
+---
+
+<Layout
+  title={`${occasion.name} Gift & Flowers - Blume & Co.`}
+  description={`Kado spesial untuk ${occasion.name}, flower, cake, dan gift pilihan. Order via WhatsApp.`}
+>
+  <section class="mx-auto max-w-6xl px-4 pb-8 pt-16">
+    <p class="text-sm text-muted">
+      <a href="/occasion/" class="hover:underline">Occasion</a> / {occasion.name}
+    </p>
+    <h1 class="mt-2 font-display text-3xl font-semibold text-ink md:text-5xl">{occasion.name}</h1>
+    <p class="mt-3 max-w-lg text-muted">{occasion.heroCopy}</p>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-8">
+    {items.length > 0 ? (
+      <ProductGrid products={items} />
+    ) : (
+      <p class="text-muted">Produk untuk occasion ini menyusul ya, chat WhatsApp kami buat rekomendasi.</p>
+    )}
+  </section>
+</Layout>

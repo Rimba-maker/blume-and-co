@@ -1,0 +1,69 @@
+---
+import { getCollection } from "astro:content";
+import MegaMenu, { type NavItem } from "./MegaMenu.tsx";
+import {
+  flowerSubcategories,
+  bungaPapanSubcategories,
+  cakeGiftGroups,
+  locationRegions,
+} from "../../lib/navData";
+import { waLink } from "../../lib/waLink";
+
+const occasions = await getCollection("occasions");
+
+const items: NavItem[] = [
+  { label: "Beranda", href: "/" },
+  { label: "New Arrival", href: "/new-arrival/" },
+  {
+    label: "Flower",
+    href: "/flower/",
+    dropdown: {
+      kind: "simple",
+      items: flowerSubcategories.map((s) => ({ label: s.label, href: `/flower/${s.slug}/` })),
+    },
+  },
+  {
+    label: "Cake & Gift",
+    href: "/cake-gift/",
+    dropdown: {
+      kind: "grouped",
+      groups: cakeGiftGroups.map((g) => ({
+        title: g.title,
+        tint: g.tint,
+        items: g.items.map((s) => ({ label: s.label, href: `/cake-gift/${s.slug}/` })),
+      })),
+    },
+  },
+  {
+    label: "Bunga Papan",
+    href: "/bunga-papan/",
+    dropdown: {
+      kind: "simple",
+      items: bungaPapanSubcategories.map((s) => ({ label: s.label, href: `/bunga-papan/${s.slug}/` })),
+    },
+  },
+  {
+    label: "Occasion",
+    href: "/occasion/",
+    dropdown: {
+      kind: "simple",
+      items: occasions.map((o) => ({ label: o.data.name, href: `/occasion/${o.data.slug}/` })),
+    },
+  },
+  {
+    label: "Location",
+    href: "/lokasi/",
+    dropdown: {
+      kind: "grouped",
+      groups: locationRegions.map((r) => ({
+        title: r.region,
+        items: r.cities.map((c) => ({ label: c.label, href: `/lokasi/${c.slug}/` })),
+      })),
+    },
+  },
+];
+---
+
+<header class="sticky top-4 z-40 px-4">
+  <MegaMenu items={items} waHref={waLink.generic()} catalogHref="/katalog-blumeandco.pdf" client:load />
+</header>

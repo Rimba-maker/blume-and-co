@@ -1,0 +1,41 @@
+---
+import { WhatsappLogoIcon as WhatsappLogo, InstagramLogoIcon as InstagramLogo, MapPinIcon as MapPin } from "@phosphor-icons/react";
+import Layout from "../layouts/Layout.astro";
+import { waLink } from "../lib/waLink";
+---
+
+<Layout
+  title="Kontak - Blume & Co."
+  description="Hubungi Blume & Co. lewat WhatsApp atau Instagram untuk order flower, cake, dan gift."
+>
+  <section class="mx-auto max-w-3xl px-4 py-16">
+    <h1 class="font-display text-3xl font-semibold text-ink md:text-5xl">Kontak</h1>
+    <p class="mt-3 text-muted">Semua order dan pertanyaan lewat WhatsApp, tim kami respon cepat.</p>
+
+    <ul class="mt-8 flex flex-col gap-4">
+      <li class="flex items-center gap-3">
+        <WhatsappLogo size={22} className="text-ink" />
+        <a href={waLink.generic()} target="_blank" rel="noopener noreferrer" class="text-ink hover:underline">
+          62XXXXXXXXXX
+        </a>
+      </li>
+      <li class="flex items-center gap-3">
+        <InstagramLogo size={22} className="text-ink" />
+        <span class="text-ink">@blumeandco.id</span>
+      </li>
+      <li class="flex items-center gap-3">
+        <MapPin size={22} className="text-ink" />
+        <span class="text-ink">[Alamat toko, diisi saat implementasi]</span>
+      </li>
+    </ul>
+
+    <a
+      href={waLink.generic()}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-8 inline-block rounded-full bg-cta px-6 py-3 text-sm font-medium text-ink hover:bg-cta-active"
+    >
+      Chat via WhatsApp
+    </a>
+  </section>
+</Layout>

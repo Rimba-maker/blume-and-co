@@ -1,0 +1,11 @@
+[
+  { "id": "girlfriend-day", "name": "Girlfriend Day", "slug": "girlfriend-day", "heroCopy": "Kejutan kecil buat pasangan tersayang, kapan saja tanpa perlu momen besar." },
+  { "id": "congratulations", "name": "Congratulations", "slug": "congratulations", "heroCopy": "Rayakan pencapaian orang terdekatmu dengan kado yang berkesan." },
+  { "id": "wedding", "name": "Wedding", "slug": "wedding", "heroCopy": "Rangkaian bunga dan hampers spesial buat hari bahagiamu." },
+  { "id": "birthday", "name": "Birthday", "slug": "birthday", "heroCopy": "Kado ulang tahun yang beda, dari cake custom sampai buket giant." },
+  { "id": "anniversary", "name": "Anniversary", "slug": "anniversary", "heroCopy": "Tandai tiap tahun bersama dengan hadiah yang diingat lama." },
+  { "id": "sympathy-funeral", "name": "Sympathy & Funeral", "slug": "sympathy-funeral", "heroCopy": "Sampaikan belasungkawa dengan karangan bunga papan yang sopan dan cepat dikirim." },
+  { "id": "newborn", "name": "Newborn", "slug": "newborn", "heroCopy": "Sambut si kecil dengan hampers dan bunga meja yang hangat." },
+  { "id": "graduation", "name": "Graduation", "slug": "graduation", "heroCopy": "Rayakan kelulusan dengan buket wisuda, bunga papan, atau hampers custom." },
+  { "id": "corporate", "name": "Corporate", "slug": "corporate", "heroCopy": "Bunga papan dan hampers korporat untuk grand opening, ulang tahun perusahaan, dan acara bisnis." }
+]

@@ -1,0 +1,926 @@
+[
+  {
+    "id": "forever-rose-box-klasik",
+    "name": "Forever Rose Box Klasik",
+    "slug": "forever-rose-box-klasik",
+    "category": "flower",
+    "subcategory": "forever-flower",
+    "subcategoryLabel": "Forever Flower",
+    "occasions": [
+      "anniversary",
+      "girlfriend-day"
+    ],
+    "priceIDR": 285000,
+    "image": "https://picsum.photos/seed/blume-forever-rose-box/900/1100",
+    "badge": "best-seller"
+  },
+  {
+    "id": "forever-rose-dome-gold",
+    "name": "Forever Rose Dome Gold Rim",
+    "slug": "forever-rose-dome-gold",
+    "category": "flower",
+    "subcategory": "forever-flower",
+    "subcategoryLabel": "Forever Flower",
+    "occasions": [
+      "anniversary",
+      "wedding"
+    ],
+    "priceIDR": 340000,
+    "image": "https://picsum.photos/seed/blume-forever-rose-dome/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "buket-bunga-mixed-pastel",
+    "name": "Buket Bunga Mixed Pastel",
+    "slug": "buket-bunga-mixed-pastel",
+    "category": "flower",
+    "subcategory": "buket-bunga",
+    "subcategoryLabel": "Buket Bunga",
+    "occasions": [
+      "birthday",
+      "congratulations"
+    ],
+    "priceIDR": 165000,
+    "image": "https://picsum.photos/seed/blume-buket-mixed-pastel/900/1125",
+    "badge": "none"
+  },
+  {
+    "id": "buket-bunga-tulip-import",
+    "name": "Buket Tulip Import",
+    "slug": "buket-bunga-tulip-import",
+    "category": "flower",
+    "subcategory": "buket-bunga",
+    "subcategoryLabel": "Buket Bunga",
+    "occasions": [
+      "girlfriend-day",
+      "anniversary"
+    ],
+    "priceIDR": 225000,
+    "image": "https://picsum.photos/seed/blume-buket-tulip/900/1000",
+    "badge": "baru"
+  },
+  {
+    "id": "bunga-meja-mini-vase",
+    "name": "Bunga Meja Mini Vase",
+    "slug": "bunga-meja-mini-vase",
+    "category": "flower",
+    "subcategory": "bunga-meja",
+    "subcategoryLabel": "Bunga Meja",
+    "occasions": [
+      "congratulations",
+      "corporate"
+    ],
+    "priceIDR": 135000,
+    "image": "https://picsum.photos/seed/blume-bunga-meja-mini/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "bunga-meja-ruang-tamu",
+    "name": "Bunga Meja Ruang Tamu",
+    "slug": "bunga-meja-ruang-tamu",
+    "category": "flower",
+    "subcategory": "bunga-meja",
+    "subcategoryLabel": "Bunga Meja",
+    "occasions": [
+      "corporate",
+      "newborn"
+    ],
+    "priceIDR": 175000,
+    "image": "https://picsum.photos/seed/blume-bunga-meja-ruangtamu/900/1050",
+    "badge": "none"
+  },
+  {
+    "id": "bunga-artificial-vas-keramik",
+    "name": "Bunga Artificial Vas Keramik",
+    "slug": "bunga-artificial-vas-keramik",
+    "category": "flower",
+    "subcategory": "bunga-artificial",
+    "subcategoryLabel": "Bunga Artificial",
+    "occasions": [
+      "congratulations"
+    ],
+    "priceIDR": 195000,
+    "image": "https://picsum.photos/seed/blume-artificial-keramik/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "bunga-artificial-daisy-set",
+    "name": "Bunga Artificial Daisy Set",
+    "slug": "bunga-artificial-daisy-set",
+    "category": "flower",
+    "subcategory": "bunga-artificial",
+    "subcategoryLabel": "Bunga Artificial",
+    "occasions": [
+      "birthday"
+    ],
+    "priceIDR": 145000,
+    "image": "https://picsum.photos/seed/blume-artificial-daisy/900/1000",
+    "badge": "baru"
+  },
+  {
+    "id": "buket-giant-premium",
+    "name": "Buket Giant Premium",
+    "slug": "buket-giant-premium",
+    "category": "flower",
+    "subcategory": "buket-giant",
+    "subcategoryLabel": "Buket Giant",
+    "occasions": [
+      "graduation",
+      "wedding"
+    ],
+    "priceIDR": 450000,
+    "image": "https://picsum.photos/seed/blume-buket-giant-premium/900/1150",
+    "badge": "best-seller"
+  },
+  {
+    "id": "buket-giant-sunflower",
+    "name": "Buket Giant Sunflower",
+    "slug": "buket-giant-sunflower",
+    "category": "flower",
+    "subcategory": "buket-giant",
+    "subcategoryLabel": "Buket Giant",
+    "occasions": [
+      "graduation"
+    ],
+    "priceIDR": 395000,
+    "image": "https://picsum.photos/seed/blume-buket-giant-sunflower/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "buket-uang-kelopak-bunga",
+    "name": "Buket Uang Kelopak Bunga",
+    "slug": "buket-uang-kelopak-bunga",
+    "category": "flower",
+    "subcategory": "buket-uang",
+    "subcategoryLabel": "Buket Uang",
+    "occasions": [
+      "birthday",
+      "graduation"
+    ],
+    "priceIDR": 150000,
+    "priceNote": "Belum termasuk isi uang",
+    "image": "https://picsum.photos/seed/blume-buket-uang-kelopak/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "buket-uang-mawar-jumbo",
+    "name": "Buket Uang Mawar Jumbo",
+    "slug": "buket-uang-mawar-jumbo",
+    "category": "flower",
+    "subcategory": "buket-uang",
+    "subcategoryLabel": "Buket Uang",
+    "occasions": [
+      "graduation",
+      "birthday"
+    ],
+    "priceIDR": 210000,
+    "priceNote": "Belum termasuk isi uang",
+    "image": "https://picsum.photos/seed/blume-buket-uang-jumbo/900/1050",
+    "badge": "baru"
+  },
+  {
+    "id": "bloom-box-sunflower",
+    "name": "Bloom Box Sunflower",
+    "slug": "bloom-box-sunflower",
+    "category": "flower",
+    "subcategory": "bloom-box",
+    "subcategoryLabel": "Bloom Box",
+    "occasions": [
+      "birthday",
+      "congratulations"
+    ],
+    "priceIDR": 195000,
+    "image": "https://picsum.photos/seed/blume-bloom-box-sunflower/900/1100",
+    "badge": "baru"
+  },
+  {
+    "id": "bloom-box-mixed-rose",
+    "name": "Bloom Box Mixed Rose",
+    "slug": "bloom-box-mixed-rose",
+    "category": "flower",
+    "subcategory": "bloom-box",
+    "subcategoryLabel": "Bloom Box",
+    "occasions": [
+      "anniversary",
+      "sympathy-funeral"
+    ],
+    "priceIDR": 220000,
+    "image": "https://picsum.photos/seed/blume-bloom-box-rose/900/1000",
+    "badge": "none"
+  },
+  {
+    "id": "dried-flowers-bouquet-natural",
+    "name": "Dried Flowers Bouquet Natural",
+    "slug": "dried-flowers-bouquet-natural",
+    "category": "flower",
+    "subcategory": "dried-flowers",
+    "subcategoryLabel": "Dried Flowers",
+    "occasions": [
+      "newborn"
+    ],
+    "priceIDR": 175000,
+    "image": "https://picsum.photos/seed/blume-dried-flowers-natural/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "dried-flowers-frame-art",
+    "name": "Dried Flowers Frame Art",
+    "slug": "dried-flowers-frame-art",
+    "category": "flower",
+    "subcategory": "dried-flowers",
+    "subcategoryLabel": "Dried Flowers",
+    "occasions": [
+      "congratulations"
+    ],
+    "priceIDR": 245000,
+    "image": "https://picsum.photos/seed/blume-dried-flowers-frame/900/1050",
+    "badge": "baru"
+  },
+  {
+    "id": "papan-bunga-1",
+    "name": "Papan Bunga Standar",
+    "slug": "papan-bunga-1",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga",
+    "subcategoryLabel": "Papan Bunga",
+    "occasions": [
+      "congratulations",
+      "corporate"
+    ],
+    "priceIDR": 650000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-1/900/1100",
+    "badge": "best-seller"
+  },
+  {
+    "id": "papan-bunga-2",
+    "name": "Papan Bunga Premium",
+    "slug": "papan-bunga-2",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga",
+    "subcategoryLabel": "Papan Bunga",
+    "occasions": [
+      "congratulations",
+      "corporate"
+    ],
+    "priceIDR": 880000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-2/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "karangan-bunga-papan-1",
+    "name": "Karangan Bunga Papan Standar",
+    "slug": "karangan-bunga-papan-1",
+    "category": "bunga-papan",
+    "subcategory": "karangan-bunga-papan",
+    "subcategoryLabel": "Karangan Bunga Papan",
+    "occasions": [
+      "sympathy-funeral"
+    ],
+    "priceIDR": 700000,
+    "image": "https://picsum.photos/seed/blume-bp-karangan-bunga-papan-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "karangan-bunga-papan-2",
+    "name": "Karangan Bunga Papan Premium",
+    "slug": "karangan-bunga-papan-2",
+    "category": "bunga-papan",
+    "subcategory": "karangan-bunga-papan",
+    "subcategoryLabel": "Karangan Bunga Papan",
+    "occasions": [
+      "sympathy-funeral"
+    ],
+    "priceIDR": 945000,
+    "image": "https://picsum.photos/seed/blume-bp-karangan-bunga-papan-2/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "papan-bunga-kertas-1",
+    "name": "Papan Bunga Kertas Standar",
+    "slug": "papan-bunga-kertas-1",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga-kertas",
+    "subcategoryLabel": "Papan Bunga Kertas",
+    "occasions": [
+      "congratulations"
+    ],
+    "priceIDR": 550000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-kertas-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "papan-bunga-kertas-2",
+    "name": "Papan Bunga Kertas Premium",
+    "slug": "papan-bunga-kertas-2",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga-kertas",
+    "subcategoryLabel": "Papan Bunga Kertas",
+    "occasions": [
+      "congratulations"
+    ],
+    "priceIDR": 745000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-kertas-2/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "papan-bunga-artificial-1",
+    "name": "Papan Bunga Artificial Standar",
+    "slug": "papan-bunga-artificial-1",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga-artificial",
+    "subcategoryLabel": "Papan Bunga Artificial",
+    "occasions": [
+      "corporate",
+      "congratulations"
+    ],
+    "priceIDR": 800000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-artificial-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "papan-bunga-artificial-2",
+    "name": "Papan Bunga Artificial Premium",
+    "slug": "papan-bunga-artificial-2",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga-artificial",
+    "subcategoryLabel": "Papan Bunga Artificial",
+    "occasions": [
+      "corporate",
+      "congratulations"
+    ],
+    "priceIDR": 1080000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-artificial-2/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "papan-bunga-led-1",
+    "name": "Papan Bunga LED Standar",
+    "slug": "papan-bunga-led-1",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga-led",
+    "subcategoryLabel": "Papan Bunga LED",
+    "occasions": [
+      "corporate",
+      "wedding"
+    ],
+    "priceIDR": 950000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-led-1/900/1100",
+    "badge": "baru"
+  },
+  {
+    "id": "papan-bunga-led-2",
+    "name": "Papan Bunga LED Premium",
+    "slug": "papan-bunga-led-2",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga-led",
+    "subcategoryLabel": "Papan Bunga LED",
+    "occasions": [
+      "corporate",
+      "wedding"
+    ],
+    "priceIDR": 1285000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-led-2/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "papan-bunga-printing-1",
+    "name": "Papan Bunga Printing Standar",
+    "slug": "papan-bunga-printing-1",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga-printing",
+    "subcategoryLabel": "Papan Bunga Printing",
+    "occasions": [
+      "congratulations",
+      "corporate"
+    ],
+    "priceIDR": 750000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-printing-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "papan-bunga-printing-2",
+    "name": "Papan Bunga Printing Premium",
+    "slug": "papan-bunga-printing-2",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga-printing",
+    "subcategoryLabel": "Papan Bunga Printing",
+    "occasions": [
+      "congratulations",
+      "corporate"
+    ],
+    "priceIDR": 1015000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-printing-2/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "papan-bunga-acrylic-1",
+    "name": "Papan Bunga Acrylic Standar",
+    "slug": "papan-bunga-acrylic-1",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga-acrylic",
+    "subcategoryLabel": "Papan Bunga Acrylic",
+    "occasions": [
+      "wedding",
+      "corporate"
+    ],
+    "priceIDR": 1200000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-acrylic-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "papan-bunga-acrylic-2",
+    "name": "Papan Bunga Acrylic Premium",
+    "slug": "papan-bunga-acrylic-2",
+    "category": "bunga-papan",
+    "subcategory": "papan-bunga-acrylic",
+    "subcategoryLabel": "Papan Bunga Acrylic",
+    "occasions": [
+      "wedding",
+      "corporate"
+    ],
+    "priceIDR": 1620000,
+    "image": "https://picsum.photos/seed/blume-bp-papan-bunga-acrylic-2/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "standing-flower-1",
+    "name": "Standing Flower Standar",
+    "slug": "standing-flower-1",
+    "category": "bunga-papan",
+    "subcategory": "standing-flower",
+    "subcategoryLabel": "Standing Flower",
+    "occasions": [
+      "sympathy-funeral",
+      "congratulations"
+    ],
+    "priceIDR": 900000,
+    "image": "https://picsum.photos/seed/blume-bp-standing-flower-1/900/1100",
+    "badge": "best-seller"
+  },
+  {
+    "id": "standing-flower-2",
+    "name": "Standing Flower Premium",
+    "slug": "standing-flower-2",
+    "category": "bunga-papan",
+    "subcategory": "standing-flower",
+    "subcategoryLabel": "Standing Flower",
+    "occasions": [
+      "sympathy-funeral",
+      "congratulations"
+    ],
+    "priceIDR": 1215000,
+    "image": "https://picsum.photos/seed/blume-bp-standing-flower-2/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "standing-giant-flower-1",
+    "name": "Standing Giant Flower Standar",
+    "slug": "standing-giant-flower-1",
+    "category": "bunga-papan",
+    "subcategory": "standing-giant-flower",
+    "subcategoryLabel": "Standing Giant Flower",
+    "occasions": [
+      "wedding",
+      "corporate"
+    ],
+    "priceIDR": 1350000,
+    "image": "https://picsum.photos/seed/blume-bp-standing-giant-flower-1/900/1100",
+    "badge": "baru"
+  },
+  {
+    "id": "standing-giant-flower-2",
+    "name": "Standing Giant Flower Premium",
+    "slug": "standing-giant-flower-2",
+    "category": "bunga-papan",
+    "subcategory": "standing-giant-flower",
+    "subcategoryLabel": "Standing Giant Flower",
+    "occasions": [
+      "wedding",
+      "corporate"
+    ],
+    "priceIDR": 1825000,
+    "image": "https://picsum.photos/seed/blume-bp-standing-giant-flower-2/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "cakes-1",
+    "name": "Cakes",
+    "slug": "cakes-1",
+    "category": "cake-gift",
+    "subcategory": "cakes",
+    "subcategoryLabel": "Cakes",
+    "occasions": [
+      "birthday",
+      "anniversary"
+    ],
+    "priceIDR": 220000,
+    "image": "https://picsum.photos/seed/blume-cg-cakes-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "tarts-1",
+    "name": "Tarts",
+    "slug": "tarts-1",
+    "category": "cake-gift",
+    "subcategory": "tarts",
+    "subcategoryLabel": "Tarts",
+    "occasions": [
+      "birthday"
+    ],
+    "priceIDR": 165000,
+    "image": "https://picsum.photos/seed/blume-cg-tarts-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "ice-cream-cakes-1",
+    "name": "Ice Cream Cakes",
+    "slug": "ice-cream-cakes-1",
+    "category": "cake-gift",
+    "subcategory": "ice-cream-cakes",
+    "subcategoryLabel": "Ice Cream Cakes",
+    "occasions": [
+      "birthday"
+    ],
+    "priceIDR": 195000,
+    "image": "https://picsum.photos/seed/blume-cg-ice-cream-cakes-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "printing-cakes-1",
+    "name": "Printing Cakes",
+    "slug": "printing-cakes-1",
+    "category": "cake-gift",
+    "subcategory": "printing-cakes",
+    "subcategoryLabel": "Printing Cakes",
+    "occasions": [
+      "birthday",
+      "congratulations"
+    ],
+    "priceIDR": 245000,
+    "image": "https://picsum.photos/seed/blume-cg-printing-cakes-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "3d-cakes-1",
+    "name": "3D Cakes",
+    "slug": "3d-cakes-1",
+    "category": "cake-gift",
+    "subcategory": "3d-cakes",
+    "subcategoryLabel": "3D Cakes",
+    "occasions": [
+      "birthday"
+    ],
+    "priceIDR": 385000,
+    "image": "https://picsum.photos/seed/blume-cg-3d-cakes-1/900/1100",
+    "badge": "best-seller"
+  },
+  {
+    "id": "gelato-1",
+    "name": "Gelato",
+    "slug": "gelato-1",
+    "category": "cake-gift",
+    "subcategory": "gelato",
+    "subcategoryLabel": "Gelato",
+    "occasions": [
+      "birthday"
+    ],
+    "priceIDR": 95000,
+    "image": "https://picsum.photos/seed/blume-cg-gelato-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "cookies-1",
+    "name": "Cookies",
+    "slug": "cookies-1",
+    "category": "cake-gift",
+    "subcategory": "cookies",
+    "subcategoryLabel": "Cookies",
+    "occasions": [
+      "congratulations"
+    ],
+    "priceIDR": 85000,
+    "image": "https://picsum.photos/seed/blume-cg-cookies-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "hampers-1",
+    "name": "Hampers",
+    "slug": "hampers-1",
+    "category": "cake-gift",
+    "subcategory": "hampers",
+    "subcategoryLabel": "Hampers",
+    "occasions": [
+      "corporate",
+      "congratulations"
+    ],
+    "priceIDR": 250000,
+    "image": "https://picsum.photos/seed/blume-cg-hampers-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "fruit-hampers-1",
+    "name": "Fruit Hampers",
+    "slug": "fruit-hampers-1",
+    "category": "cake-gift",
+    "subcategory": "fruit-hampers",
+    "subcategoryLabel": "Fruit Hampers",
+    "occasions": [
+      "sympathy-funeral",
+      "corporate"
+    ],
+    "priceIDR": 275000,
+    "image": "https://picsum.photos/seed/blume-cg-fruit-hampers-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "newborn-hampers-1",
+    "name": "Newborn Hampers",
+    "slug": "newborn-hampers-1",
+    "category": "cake-gift",
+    "subcategory": "newborn-hampers",
+    "subcategoryLabel": "Newborn Hampers",
+    "occasions": [
+      "newborn"
+    ],
+    "priceIDR": 220000,
+    "image": "https://picsum.photos/seed/blume-cg-newborn-hampers-1/900/1100",
+    "badge": "baru"
+  },
+  {
+    "id": "love-bundle-1",
+    "name": "Love Bundle",
+    "slug": "love-bundle-1",
+    "category": "cake-gift",
+    "subcategory": "love-bundle",
+    "subcategoryLabel": "Love Bundle",
+    "occasions": [
+      "anniversary",
+      "girlfriend-day"
+    ],
+    "priceIDR": 265000,
+    "image": "https://picsum.photos/seed/blume-cg-love-bundle-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "wedding-hampers-1",
+    "name": "Wedding Hampers",
+    "slug": "wedding-hampers-1",
+    "category": "cake-gift",
+    "subcategory": "wedding-hampers",
+    "subcategoryLabel": "Wedding Hampers",
+    "occasions": [
+      "wedding"
+    ],
+    "priceIDR": 320000,
+    "image": "https://picsum.photos/seed/blume-cg-wedding-hampers-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "food-hampers-1",
+    "name": "Food Hampers",
+    "slug": "food-hampers-1",
+    "category": "cake-gift",
+    "subcategory": "food-hampers",
+    "subcategoryLabel": "Food Hampers",
+    "occasions": [
+      "corporate"
+    ],
+    "priceIDR": 240000,
+    "image": "https://picsum.photos/seed/blume-cg-food-hampers-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "snack-box-1",
+    "name": "Snack Box",
+    "slug": "snack-box-1",
+    "category": "cake-gift",
+    "subcategory": "snack-box",
+    "subcategoryLabel": "Snack Box",
+    "occasions": [
+      "corporate"
+    ],
+    "priceIDR": 120000,
+    "image": "https://picsum.photos/seed/blume-cg-snack-box-1/900/1100",
+    "badge": "best-seller"
+  },
+  {
+    "id": "personalized-gift-1",
+    "name": "Personalized Gift",
+    "slug": "personalized-gift-1",
+    "category": "cake-gift",
+    "subcategory": "personalized-gift",
+    "subcategoryLabel": "Personalized Gift",
+    "occasions": [
+      "birthday",
+      "anniversary"
+    ],
+    "priceIDR": 175000,
+    "image": "https://picsum.photos/seed/blume-cg-personalized-gift-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "tumbler-1",
+    "name": "Tumbler",
+    "slug": "tumbler-1",
+    "category": "cake-gift",
+    "subcategory": "tumbler",
+    "subcategoryLabel": "Tumbler",
+    "occasions": [
+      "birthday"
+    ],
+    "priceIDR": 145000,
+    "image": "https://picsum.photos/seed/blume-cg-tumbler-1/900/1100",
+    "badge": "baru"
+  },
+  {
+    "id": "fashion-1",
+    "name": "Fashion",
+    "slug": "fashion-1",
+    "category": "cake-gift",
+    "subcategory": "fashion",
+    "subcategoryLabel": "Fashion",
+    "occasions": [
+      "birthday",
+      "anniversary"
+    ],
+    "priceIDR": 285000,
+    "image": "https://picsum.photos/seed/blume-cg-fashion-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "home-decor-1",
+    "name": "Home Decor",
+    "slug": "home-decor-1",
+    "category": "cake-gift",
+    "subcategory": "home-decor",
+    "subcategoryLabel": "Home Decor",
+    "occasions": [
+      "newborn",
+      "congratulations"
+    ],
+    "priceIDR": 195000,
+    "image": "https://picsum.photos/seed/blume-cg-home-decor-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "stationery-1",
+    "name": "Stationery",
+    "slug": "stationery-1",
+    "category": "cake-gift",
+    "subcategory": "stationery",
+    "subcategoryLabel": "Stationery",
+    "occasions": [
+      "graduation"
+    ],
+    "priceIDR": 95000,
+    "image": "https://picsum.photos/seed/blume-cg-stationery-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "photobook-1",
+    "name": "Photobook",
+    "slug": "photobook-1",
+    "category": "cake-gift",
+    "subcategory": "photobook",
+    "subcategoryLabel": "Photobook",
+    "occasions": [
+      "anniversary",
+      "wedding"
+    ],
+    "priceIDR": 225000,
+    "image": "https://picsum.photos/seed/blume-cg-photobook-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "gifts-1",
+    "name": "Gifts",
+    "slug": "gifts-1",
+    "category": "cake-gift",
+    "subcategory": "gifts",
+    "subcategoryLabel": "Gifts",
+    "occasions": [
+      "birthday"
+    ],
+    "priceIDR": 165000,
+    "image": "https://picsum.photos/seed/blume-cg-gifts-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "jewelry-1",
+    "name": "Jewelry",
+    "slug": "jewelry-1",
+    "category": "cake-gift",
+    "subcategory": "jewelry",
+    "subcategoryLabel": "Jewelry",
+    "occasions": [
+      "anniversary",
+      "girlfriend-day"
+    ],
+    "priceIDR": 450000,
+    "image": "https://picsum.photos/seed/blume-cg-jewelry-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "dowry-1",
+    "name": "Dowry",
+    "slug": "dowry-1",
+    "category": "cake-gift",
+    "subcategory": "dowry",
+    "subcategoryLabel": "Dowry",
+    "occasions": [
+      "wedding"
+    ],
+    "priceIDR": 850000,
+    "image": "https://picsum.photos/seed/blume-cg-dowry-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "diffuser-1",
+    "name": "Diffuser",
+    "slug": "diffuser-1",
+    "category": "cake-gift",
+    "subcategory": "diffuser",
+    "subcategoryLabel": "Diffuser",
+    "occasions": [
+      "newborn",
+      "congratulations"
+    ],
+    "priceIDR": 135000,
+    "image": "https://picsum.photos/seed/blume-cg-diffuser-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "candle-1",
+    "name": "Candle",
+    "slug": "candle-1",
+    "category": "cake-gift",
+    "subcategory": "candle",
+    "subcategoryLabel": "Candle",
+    "occasions": [
+      "anniversary",
+      "girlfriend-day"
+    ],
+    "priceIDR": 95000,
+    "image": "https://picsum.photos/seed/blume-cg-candle-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "cuddlemate-doll-1",
+    "name": "Cuddlemate Doll",
+    "slug": "cuddlemate-doll-1",
+    "category": "cake-gift",
+    "subcategory": "cuddlemate-doll",
+    "subcategoryLabel": "Cuddlemate Doll",
+    "occasions": [
+      "birthday",
+      "newborn"
+    ],
+    "priceIDR": 165000,
+    "image": "https://picsum.photos/seed/blume-cg-cuddlemate-doll-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "chocolate-1",
+    "name": "Chocolate",
+    "slug": "chocolate-1",
+    "category": "cake-gift",
+    "subcategory": "chocolate",
+    "subcategoryLabel": "Chocolate",
+    "occasions": [
+      "girlfriend-day",
+      "anniversary"
+    ],
+    "priceIDR": 110000,
+    "image": "https://picsum.photos/seed/blume-cg-chocolate-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "greeting-card-1",
+    "name": "Greeting Card",
+    "slug": "greeting-card-1",
+    "category": "cake-gift",
+    "subcategory": "greeting-card",
+    "subcategoryLabel": "Greeting Card",
+    "occasions": [
+      "birthday",
+      "congratulations"
+    ],
+    "priceIDR": 25000,
+    "image": "https://picsum.photos/seed/blume-cg-greeting-card-1/900/1100",
+    "badge": "none"
+  },
+  {
+    "id": "party-supply-1",
+    "name": "Party Supply",
+    "slug": "party-supply-1",
+    "category": "cake-gift",
+    "subcategory": "party-supply",
+    "subcategoryLabel": "Party Supply",
+    "occasions": [
+      "birthday"
+    ],
+    "priceIDR": 150000,
+    "image": "https://picsum.photos/seed/blume-cg-party-supply-1/900/1100",
+    "badge": "none"
+  }
+]

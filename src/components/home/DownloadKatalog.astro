@@ -1,0 +1,28 @@
+---
+import { waLink } from "../../lib/waLink";
+---
+
+<section class="mx-auto max-w-3xl px-4 py-16 text-center">
+  <h2 class="font-display text-2xl font-semibold text-ink md:text-3xl">
+    Lihat Katalog Lengkap Kami
+  </h2>
+  <p class="mx-auto mt-3 max-w-md text-base text-muted">
+    Unduh katalog PDF untuk lihat semua kategori produk sebelum order via WhatsApp.
+  </p>
+  <div class="mt-6 flex flex-wrap justify-center gap-3">
+    <a
+      href="/katalog-blumeandco.pdf"
+      class="rounded-full bg-primary px-6 py-3 text-sm font-medium text-ink hover:bg-primary-active"
+    >
+      Download Katalog
+    </a>
+    <a
+      href={waLink.generic()}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="rounded-full border border-hairline px-6 py-3 text-sm font-medium text-ink hover:bg-surface-card"
+    >
+      Order via WhatsApp
+    </a>
+  </div>
+</section>
