@@ -25,15 +25,17 @@ const categories = [
 ];
 ---
 
-<section class="mx-auto max-w-6xl px-4 py-16">
+<section class="mx-auto max-w-6xl px-4 py-12 md:py-16">
   <h2 class="mb-6 font-display text-2xl font-semibold text-ink md:text-3xl">Kategori Utama</h2>
-  <div class="grid gap-4 md:grid-cols-2 md:grid-rows-2">
+  <div class="grid grid-cols-2 gap-3 md:gap-4 md:grid-rows-2">
     {categories.map((cat, i) => (
       <a
         href={cat.href}
         class:list={[
           "group relative block overflow-hidden rounded-lg",
-          i === 0 ? "h-96 md:row-span-2 md:h-full" : "h-64 md:h-full",
+          i === 0
+            ? "col-span-2 h-48 md:col-span-1 md:row-span-2 md:h-full"
+            : "h-40 md:h-full",
         ]}
       >
         <img
@@ -42,9 +44,9 @@ const categories = [
           class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
         <div class:list={["absolute inset-0 bg-gradient-to-t", cat.tint, "to-transparent"]} />
-        <div class="absolute bottom-0 p-6">
-          <h3 class="font-display text-xl font-semibold text-ink">{cat.name}</h3>
-          <p class="mt-1 max-w-[22ch] text-sm text-ink/80">{cat.blurb}</p>
+        <div class="absolute bottom-0 p-4 md:p-6">
+          <h3 class="font-display text-base font-semibold text-ink md:text-xl">{cat.name}</h3>
+          <p class="mt-1 max-w-[22ch] text-xs text-ink/80 md:text-sm">{cat.blurb}</p>
         </div>
       </a>
     ))}
