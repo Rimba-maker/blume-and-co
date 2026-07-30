@@ -56,7 +56,7 @@ export default function MegaMenu({ items }: Props) {
             >
               <a
                 href={item.href}
-                className="flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-ink transition-colors hover:bg-surface-card"
+                className="relative z-10 flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-ink transition-colors hover:bg-surface-card"
               >
                 {item.label}
                 {item.dropdown && <CaretDown size={12} weight="bold" />}
@@ -73,8 +73,8 @@ export default function MegaMenu({ items }: Props) {
                     onMouseLeave={closeSoon}
                     className={
                       item.dropdown.kind === "grouped"
-                        ? "absolute left-1/2 top-full w-[min(90vw,720px)] -translate-x-1/2 pt-3"
-                        : "absolute left-1/2 top-full w-56 -translate-x-1/2 pt-3"
+                        ? "absolute left-1/2 top-0 w-[min(90vw,720px)] -translate-x-1/2 pt-12"
+                        : "absolute left-1/2 top-0 w-56 -translate-x-1/2 pt-12"
                     }
                   >
                     {item.dropdown.kind === "simple" ? (
