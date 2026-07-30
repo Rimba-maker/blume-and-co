@@ -1,17 +1,42 @@
 ---
 import { getCollection } from "astro:content";
+import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react";
 import ProductCard from "../produk/ProductCard.astro";
 
 const products = await getCollection("products");
 const newArrivals = products.filter((p) => p.data.badge === "baru");
 ---
 
-<section class="mx-auto max-w-6xl px-4 py-16">
-  <div class="mb-6 flex items-end justify-between">
+<section class="mx-auto max-w-6xl px-4 py-16" data-scroll-strip>
+  <div class="mb-6 flex items-end justify-between gap-4">
     <h2 class="font-display text-2xl font-semibold text-ink md:text-3xl">New Arrival</h2>
-    <a href="/new-arrival/" class="text-sm font-semibold text-ink underline">Lihat Semua &rarr;</a>
+    <div class="flex items-center gap-4">
+      <a href="/new-arrival/" class="text-sm font-semibold text-ink underline">Lihat Semua</a>
+      <div class="flex items-center gap-2">
+        <button
+          type="button"
+          data-scroll-prev
+          aria-label="Sebelumnya"
+          class="flex h-9 w-9 items-center justify-center rounded-full border border-hairline text-ink transition-colors hover:bg-surface-card disabled:pointer-events-none disabled:opacity-30"
+        >
+          <CaretLeftIcon size={16} weight="bold" />
+        </button>
+        <button
+          type="button"
+          data-scroll-next
+          aria-label="Selanjutnya"
+          class="flex h-9 w-9 items-center justify-center rounded-full border border-hairline text-ink transition-colors hover:bg-surface-card disabled:pointer-events-none disabled:opacity-30"
+        >
+          <CaretRightIcon size={16} weight="bold" />
+        </button>
+      </div>
+    </div>
   </div>
-  <div class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2">
+
+  <div
+    data-scroll-track
+    class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+  >
     {newArrivals.map((product) => (
       <div class="w-48 flex-none snap-start md:w-56">
         <ProductCard
@@ -27,3 +52,23 @@ const newArrivals = products.filter((p) => p.data.badge === "baru");
     ))}
   </div>
 </section>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-scroll-strip]").forEach((strip) => {
+    const track = strip.querySelector<HTMLElement>("[data-scroll-track]");
+    const prev = strip.querySelector<HTMLButtonElement>("[data-scroll-prev]");
+    const next = strip.querySelector<HTMLButtonElement>("[data-scroll-next]");
+    if (!track || !prev || !next) return;
+
+    const updateButtons = () => {
+      prev.disabled = track.scrollLeft <= 4;
+      next.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+    };
+
+    const step = () => track.clientWidth * 0.8;
+    prev.addEventListener("click", () => track.scrollBy({ left: -step(), behavior: "smooth" }));
+    next.addEventListener("click", () => track.scrollBy({ left: step(), behavior: "smooth" }));
+    track.addEventListener("scroll", updateButtons, { passive: true });
+    updateButtons();
+  });
+</script>
